@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, PermissionsAndroid, FlatList, TouchableOpacity } from 'react-native';
 import Contacts from 'react-native-contacts';
 import { Card, SearchBar } from 'react-native-elements';
-
+import Drawer from './drawer'
 
 export default class Home extends Component {
 
@@ -87,7 +87,6 @@ export default class Home extends Component {
         return (
 
             <View style={styles.container}>
-
                 <SearchBar
                     placeholder="Type Here..."
                     onChangeText={(value) => this.searchContacts(value)}
